@@ -122,6 +122,9 @@
                 transform: rotate(45deg) translate(0%, 50%);
             }
         }
+        @media (max-width: toEm(997.98)) {
+            display: flex;
+        }
     }
 }
 
