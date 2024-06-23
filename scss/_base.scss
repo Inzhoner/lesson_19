@@ -1,0 +1,21 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+// "clig" off вимикає контекстні лігатури. Контекстні лігатури - це спеціальні форми символів, які використовуються в певних контекстах для поліпшення читабельності.
+// "liga" off вимикає стандартні лігатури. Лігатури - це сполучення двох або більше символів в один для створення естетично привабливих пар символів, наприклад, "fi" або "fl".
+
+.wrapper {
+    overflow: clip;
+    min-block-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*='__container'] {
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
