@@ -1,4 +1,5 @@
 .header {
+    background: rgba(30, 40, 50, 0.05);
     // .header__container
     &__container {
     }
@@ -31,6 +32,15 @@
 
     // .top-header__search
     &__search {
+        display: flex;
+        align-items: center;
+        gap: toRem(10);
+        border: toRem(1) solid #e3e3e3;
+        border-radius: toRem(8);
+        padding: toRem(4);
+        &:focus-within {
+            border: toRem(1) solid #e74848;
+        }
     }
 
     // .top-header__button
@@ -51,6 +61,7 @@
 
     // .top-header__input
     &__input {
+        color: #e74848;
         @media (max-width: toEm(650)) {
             display: none;
         }
