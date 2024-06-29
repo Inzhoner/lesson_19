@@ -12,9 +12,10 @@
 
     &__wrapper {
         display: flex;
-        gap: toRem(20);
+        column-gap: toRem(92);
+        row-gap: toRem(40);
         justify-content: space-between;
-        padding: 81px 112px 80px 0;
+        padding-block: toRem(80);
         @media (max-width: toEm(810)) {
             display: flex;
             flex-direction: column;
@@ -36,7 +37,7 @@
     &__title {
         color: #000;
         font-family: 'Roboto', sans-serif;
-        font-size: clamp(36px, 21.4144px + 3.8895vw, 74px);
+        font-size: clamp(toRem(36), toRem(20) + 3.8895vw, toRem(74));
         font-weight: 300;
         line-height: 0.74324;
         margin-bottom: clamp(0.75rem, -0.1016rem + 3.6336vw, 2.96875rem);
@@ -73,7 +74,7 @@
         span {
             color: #fff;
             font-family: 'Roboto', sans-serif;
-            font-size: clamp(1.125rem, 0.8611rem + 1.1259vw, 1.8125rem);
+            font-size: clamp(toRem(16), toRem(14) + 1.1259vw, toRem(30));
         }
     }
 
@@ -81,15 +82,14 @@
     &__picture {
         position: relative;
         vertical-align: top;
-        flex: 0 1 424px;
-        border: 2px solid rgba(0, 0, 0, 0.25);
-        border-radius: 160px 0 160px 0;
+        border: toRem(2) solid rgba(0, 0, 0, 0.25);
+        border-radius: 37.7358% 0 / 29.5203% 0;
         aspect-ratio: 424 / 562;
-        inline-size: min(100%, 27.625rem);
+        inline-size: min(100%, toRem(424));
         img {
-            margin-left: -18px;
-            margin-top: -20px;
-            border-radius: 160px 0 160px 0;
+            margin-left: toRem(-18);
+            margin-top: toRem(-20);
+            border-radius: 37.7358% 0 / 29.5203% 0;
             position: absolute;
             top: 0;
             left: 0;
