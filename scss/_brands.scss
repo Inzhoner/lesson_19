@@ -1,0 +1,43 @@
+.main {
+    // .main__brands
+    &__brands {
+        margin-block-end: clamp(3rem, 1.9925rem + 4.2989vw, 5.625rem);
+    }
+}
+.brands {
+    // .brands__container
+    &__container {
+    }
+
+    // .brands__list
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 14px 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // .brands__item
+    &__item {
+        position: relative;
+        flex: 0 toRem(200);
+        aspect-ratio: 200 / 70;
+        @media (max-width: toEm(800)) {
+            flex: 0 0 toRem(140);
+        }
+    }
+
+    // .brands__link
+    &__link {
+    }
+
+    // .brands__image
+    &__image {
+        position: absolute;
+        inset: 0;
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: contain;
+    }
+}
