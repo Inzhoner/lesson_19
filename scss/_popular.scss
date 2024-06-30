@@ -7,6 +7,28 @@
 .popular {
     // .popular__container
     &__container {
+        @media (88.875em <= width) {
+            position: relative;
+        }
+    }
+    // .popular__title
+    &__title {
+        color: #000; 
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        @media (88.875em <= width) {
+            position: absolute;
+            inset-block-end: 8px;
+            inset-inline-end: 30px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg) translateX(100%);
+        }
+    }
+
+    // .popular__container
+    &__content {
         display: grid;
         gap: toRem(24);
         grid-template: repeat(2, 1fr) / repeat(

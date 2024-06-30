@@ -58,15 +58,9 @@
 
     &__button {
         display: inline-flex;
-        align-items: center;
         gap: toRem(8);
-        background: #1e2832;
         padding: toRem(19) toRem(26);
-        transition: all 0.5s ease-in-out;
-        &:hover {
-            background: #ff6f61;
-            color: #000;
-        }
+
         // img {
         //     width: toRem(30);
         //     height: toRem(30);

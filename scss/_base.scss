@@ -35,7 +35,17 @@ input[type='search']::-webkit-search-decoration {
 //     display: none;
 // }
 
-// прибираємо скрол сторінки при відкритому бургері 
+// прибираємо скрол сторінки при відкритому бургері
 .open body {
     overflow: hidden;
-  }
+}
+
+.btn {
+    align-items: center;
+    background: #1e2832;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: #ff6f61;
+    }
+}
