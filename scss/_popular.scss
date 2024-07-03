@@ -13,17 +13,20 @@
     }
     // .popular__title
     &__title {
-        color: #000; 
+        color: #000;
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        font-size: 32px;
+        font-size: clamp(1.5rem, 1.2601rem + 1.0235vw, 2rem);
         text-transform: uppercase;
         @media (88.875em <= width) {
             position: absolute;
-            inset-block-end: 8px;
-            inset-inline-end: 30px;
+            inset-block-end: 0.5rem;
+            inset-inline-end: 1.875rem;
             writing-mode: vertical-rl;
             transform: rotate(180deg) translateX(100%);
+        }
+        @media (width < 88.875em) {
+            margin-block-end: clamp(0.75rem, 0.4621rem + 1.2282vw, 1.5rem);
         }
     }
 
@@ -39,8 +42,8 @@
 
     // .popular__item
     &__item {
-        // працює лише на екранах більш за 550 (first mobile)
-        @media (min-width: 550px) {
+        // працює лише на екранах більш за 550 рх (first mobile)
+        @media (min-width: 34.375em) {
             &:nth-child(10n + 1),
             &:nth-child(10n + 8) {
                 grid-column: span 2;

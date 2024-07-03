@@ -157,31 +157,56 @@
             <!--+ Products -->
             <section class="main__products products">
                 <div class="products__container">
+                    <!--/ Products title -->
                     <h2 class="products__title">Or subscribe to the newsletter</h2>
+                    <!--/ Products filter -->
                     <div class="products__filter filter">
                         <ul class="filter__list">
-                            <li class="filter__item"></li>
-                            <li class="filter__item"></li>
-                            <li class="filter__item"></li>
-                            <li class="filter__item"></li>
-                            <li class="filter__item"></li>
+                            <li class="filter__item">
+                                <a class="filter__link filter__link--active" href="#">all products</a>
+                            </li>
+                            <li class="filter__item">
+                                <a class="filter__link" href="#">t-shirt</a>
+                            </li>
+                            <li class="filter__item">
+                                <a class="filter__link" href="#">hoodies</a>
+                            </li>
+                            <li class="filter__item">
+                                <a class="filter__link" href="#">jacket</a>
+                            </li>
                         </ul>
                         <button class="filter__button btn">Filter</button>
                     </div>
-                    <ul class="products__gallery gallery-products">
-                        <li class="gallery-products__item">
-                            <a class="gallery-products__link" href="#">
-                                <img class="gallery-products__image" src="img/products/gallery-image-01.png" alt="product 1">
-                                <div class="gallery-products__description">
-                                    <h3 class="gallery-products__name">Adicolor Classics Joggers</h3>
-                                    <div class="gallery-products__details">
-                                        <span class="gallery-products__type">Dress</span>
-                                        <span class="gallery-products__price">$63.85</span>
+                    <!--/ Products gallery  -->
+                    <div class="products__gallery gallery">
+                        <article class="gallery__card card-gallery">
+                            <a class="card-gallery__body" href="#">
+                                <div class="card-gallery__content">
+                                    <div class="card-gallery__sticker stickers">
+                                        <h6 class="stickers__hot">hot</h6>
+                                        <h6 class="stickers__sale">sale</h6>
+                                    </div>
+                                    <img class="card-gallery__images" src="img/products/gallery-image-01.png" alt="product 1">
+                                </div>
+                                <div class="card-gallery__description description">
+                                    <h3 class="description__title">
+                                        <a class="description__link" href="#">
+                                            Adicolor Classics Joggers
+                                        </a>
+                                    </h3>
+                                    <div class="description__details">
+                                        <div class="description__type">Dress</div>
+                                        <div class="description__cost">
+                                            <div class="description__old-price">
+                                                $63.85
+                                            </div>
+                                            <div class="description__price"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
-                        </li>
-                    </ul>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>

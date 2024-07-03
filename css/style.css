@@ -174,9 +174,9 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1320px;
+  max-width: 82.5rem;
   margin-inline: auto;
-  padding-inline: 15px;
+  padding-inline: 0.9375rem;
 }
 
 @media (any-hover: hover) {
@@ -597,14 +597,14 @@ input[type=search]::-webkit-search-decoration {
   color: #000;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.2601rem + 1.0235vw, 2rem);
   text-transform: uppercase;
 }
 @media (88.875em <= width) {
   .popular__title {
     position: absolute;
-    inset-block-end: 8px;
-    inset-inline-end: 30px;
+    inset-block-end: 0.5rem;
+    inset-inline-end: 1.875rem;
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
@@ -613,12 +613,18 @@ input[type=search]::-webkit-search-decoration {
             transform: rotate(180deg) translateX(100%);
   }
 }
+@media (width < 88.875em) {
+  .popular__title {
+    -webkit-margin-after: clamp(0.75rem, 0.4621rem + 1.2282vw, 1.5rem);
+            margin-block-end: clamp(0.75rem, 0.4621rem + 1.2282vw, 1.5rem);
+  }
+}
 .popular__content {
   display: grid;
   gap: 1.5rem;
   grid-template: repeat(2, 1fr)/repeat(auto-fill, minmax(15.625rem, 1fr));
 }
-@media (min-width: 550px) {
+@media (min-width: 34.375em) {
   .popular__item:nth-child(10n+1), .popular__item:nth-child(10n+8) {
     grid-column: span 2;
     grid-row: span 2;
