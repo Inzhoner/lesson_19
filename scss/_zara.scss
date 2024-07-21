@@ -1,38 +1,99 @@
 .main {
     // .main__zara
     &__zara {
+        margin-block-end: clamp(3rem, 0.793rem + 9.4166vw, 8.75rem);
     }
 }
 .zara {
+    position: relative;
+    isolation: isolate;
+    color: hsl(0, 0%, 100%);
+    background: url(../img/zara/zara-bg-black.webp) center / cover,
+        hsl(220, 60%, 1%);
+    overflow: hidden;
+
     // .zara__container
     &__container {
+        padding-block-start: clamp(
+            toRem(24),
+            toRem(-10) + 9.0072vw,
+            toRem(112)
+        );
     }
 
     // .zara__model
     &__model {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: toRem(18) toRem(36);
+        @media (max-width: toEm(650)) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // .zara__description
     &__description {
+        inline-size: toRem(537);
+        padding-block-end: clamp(toRem(60), toRem(24) + 5.0613vw, toRem(93));
     }
 
     // .zara__title
     &__title {
+        img {
+            inline-size: clamp(toRem(95), toRem(58) + 9.826vw, toRem(191));
+            aspect-ratio: 191 / 81;
+            object-fit: contain;
+            margin-bottom: toRem(55);
+        }
     }
 
     // .zara__announcement
     &__announcement {
+        p {
+            font-family: 'Roboto';
+            font-size: toRem(26);
+            font-size: clamp(toRem(16), toRem(12) + 1.0235vw, toRem(26));
+            line-height: 1.53;
+            text-transform: capitalize;
+            margin-block-end: clamp(toRem(16), toRem(3) + 3.5312vw, toRem(55));
+        }
     }
 
     // .zara__button
     &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2759em;
+        padding-block: 0.6552em;
+        padding-inline: 0.8966em;
+        text-align: center;
+        background-color: #fff;
+        color: #1f2933;
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(toRem(18), toRem(13.7) + 1.1259vw, toRem(19));
+        line-height: 1.1724;
+        transition: background-color 0.4s;
+        &:hover {
+            color: #fff;
+        }
     }
 
     // .zara__picture
-    &__picture {
-    }
+    // &__picture {
+    // }
 
     // .zara__logo
     &__logo {
+        position: absolute;
+        z-index: -1;
+        inline-size: clamp(20rem, 10.1164rem + 42.1699vw, 45.75rem);
+        aspect-ratio: 732 / 309;
+        object-fit: contain;
+        inset-block-start: 3.1875rem;
+        inset-inline-end: -3.5rem;
     }
 }

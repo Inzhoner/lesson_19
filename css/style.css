@@ -209,6 +209,7 @@ input[type=search]::-webkit-search-decoration {
 .header {
   background: rgba(30, 40, 50, 0.05);
 }
+
 .top-header {
   position: relative;
   display: -webkit-box;
@@ -277,6 +278,7 @@ input[type=search]::-webkit-search-decoration {
         flex-basis: 9.375rem;
   }
 }
+
 .actions-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +433,7 @@ input[type=search]::-webkit-search-decoration {
     position: fixed;
   }
 }
+
 .open {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,4 +809,102 @@ input[type=search]::-webkit-search-decoration {
 }
 .description__price--sale {
   color: #ff6f61;
+}
+
+.main__zara {
+  -webkit-margin-after: clamp(3rem, 0.793rem + 9.4166vw, 8.75rem);
+          margin-block-end: clamp(3rem, 0.793rem + 9.4166vw, 8.75rem);
+}
+
+.zara {
+  position: relative;
+  isolation: isolate;
+  color: hsl(0, 0%, 100%);
+  background: url(../img/zara/zara-bg-black.webp) center/cover, hsl(220, 60%, 1%);
+  overflow: hidden;
+}
+.zara__container {
+  -webkit-padding-before: clamp(1.5rem, -0.625rem + 9.0072vw, 7rem);
+          padding-block-start: clamp(1.5rem, -0.625rem + 9.0072vw, 7rem);
+}
+.zara__model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.125rem 2.25rem;
+}
+@media (max-width: 40.625em) {
+  .zara__model {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.zara__description {
+  inline-size: 33.5625rem;
+  -webkit-padding-after: clamp(3.75rem, 1.5rem + 5.0613vw, 5.8125rem);
+          padding-block-end: clamp(3.75rem, 1.5rem + 5.0613vw, 5.8125rem);
+}
+.zara__title img {
+  inline-size: clamp(5.9375rem, 3.625rem + 9.826vw, 11.9375rem);
+  aspect-ratio: 191/81;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 3.4375rem;
+}
+.zara__announcement p {
+  font-family: "Roboto";
+  font-size: 1.625rem;
+  font-size: clamp(1rem, 0.75rem + 1.0235vw, 1.625rem);
+  line-height: 1.53;
+  text-transform: capitalize;
+  -webkit-margin-after: clamp(1rem, 0.1875rem + 3.5312vw, 3.4375rem);
+          margin-block-end: clamp(1rem, 0.1875rem + 3.5312vw, 3.4375rem);
+}
+.zara__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.2759em;
+  padding-block: 0.6552em;
+  padding-inline: 0.8966em;
+  text-align: center;
+  background-color: #fff;
+  color: #1f2933;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1.125rem, 0.85625rem + 1.1259vw, 1.1875rem);
+  line-height: 1.1724;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.zara__button:hover {
+  color: #fff;
+}
+.zara__logo {
+  position: absolute;
+  z-index: -1;
+  inline-size: clamp(20rem, 10.1164rem + 42.1699vw, 45.75rem);
+  aspect-ratio: 732/309;
+  -o-object-fit: contain;
+     object-fit: contain;
+  inset-block-start: 3.1875rem;
+  inset-inline-end: -3.5rem;
 }
