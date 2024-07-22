@@ -1,0 +1,197 @@
+.main {
+    // .main__best
+
+    &__best {
+        margin-block-end: toRem(140);
+    }
+}
+.best {
+    // .best__container
+
+    &__container {
+    }
+
+    // .best__title
+
+    &__title {
+    }
+
+    // .best__filter
+
+    &__filter {
+        margin-block-end: toRem(35);
+        ;
+    }
+
+    // .best__slider
+
+    &__slider {
+    }
+}
+.title {
+}
+.filter {
+    // .filter__list
+
+    &__list {
+    }
+
+    // .filter__item
+
+    &__item {
+    }
+
+    // .filter__link
+
+    &__link {
+    }
+
+    // .filter__link--active
+
+    &__link--active {
+    }
+
+    // .filter__button
+
+    &__button {
+    }
+}
+
+.slider {
+    position: relative;
+    // .slider__arrows
+
+    &__arrows {
+        position: absolute;
+        display: flex;
+        flex-shrink: 0;
+        z-index: 10;
+        width: 100%;
+        justify-content: space-between;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    // .slider__arrow
+
+    &__arrow {
+        cursor: pointer;
+    }
+
+    // .slider__arrow--prev
+
+    &__arrow--prev {
+    }
+
+    // .slider__arrow--next
+    &__arrow--next {
+        transform: rotate(180deg);
+        inset-inline-start: toRem(10);
+    }
+
+    // .slider__gallery
+
+    &__gallery {
+        overflow: hidden;
+    }
+}
+.gallery {
+    // .gallery__cards
+
+    &__cards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: toRem(24);
+        overflow-x: auto;
+        overflow-y: clip;
+    }
+}
+.card-gallery {
+    // .card-gallery__body
+
+    &__body {
+        flex-shrink: 0;
+    }
+
+    // .card-gallery__content
+
+    &__content {
+    }
+
+    // .card-gallery__sticker
+
+    &__sticker {
+    }
+
+    // .card-gallery__images
+
+    &__images {
+    }
+
+    // .card-gallery__description
+
+    &__description {
+    }
+}
+.stickers {
+    // .stickers__item
+
+    &__item {
+    }
+
+    // .stickers__item--hot
+
+    &__item--hot {
+    }
+
+    // .stickers__item--sale
+
+    &__item--sale {
+    }
+
+    // .stickers__item--limited
+
+    &__item--limited {
+    }
+}
+.description {
+    // .description__title
+
+    &__title {
+    }
+
+    // .description__link
+
+    &__link {
+    }
+
+    // .description__details
+
+    &__details {
+    }
+
+    // .description__type
+
+    &__type {
+    }
+
+    // .description__cost
+
+    &__cost {
+    }
+
+    // .description__price
+
+    &__price {
+    }
+
+    // .description__price--old
+
+    &__price--old {
+    }
+
+    // .description__price--sale
+
+    &__price--sale {
+    }
+}
