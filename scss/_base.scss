@@ -31,7 +31,9 @@ body {
 }
 
 @media (any-hover: hover) {
-    a:hover {
+    a:hover,
+    .subscribe__address:hover,
+    .subscribe__submit:hover {
         color: #e74848;
     }
 }

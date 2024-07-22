@@ -3,7 +3,7 @@
 
     &__promo {
         background: rgba(30, 40, 50, 0.05);
-        padding-block: toRem(100);
+        padding-block: clamp(1.875rem, 0.284rem + 7.07vw, 6.25rem);
     }
 }
 .promo {
@@ -27,6 +27,7 @@
     // .instagram__title
 
     &__title {
+        margin-block-end: clamp(1.25rem, 0.341rem + 4.04vw, 3.75rem);
     }
 
     // .instagram__products
@@ -64,27 +65,51 @@
     &__img {
     }
 }
-.title {
-}
+
 .subscribe {
     // .subscribe__title
 
     &__title {
+        margin-block-end: clamp(1.563rem, 0.449rem + 4.95vw, 4.625rem);
     }
 
     // .subscribe__form
 
     &__form {
+        display: flex;
+        gap: clamp(0.75rem, 0.4142rem + 1.433vw, 1.625rem);
+        max-inline-size: 47.5rem;
+        margin-inline: auto;
     }
 
     // .subscribe__address
 
     &__address {
+        flex: 1;
+        inline-size: 0;
+        padding: 0.5rem 0.9375rem;
+        border-block-end: 0.125rem solid;
+        color: rgba(30, 40, 50, 0.5);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        line-height: 1.1875;
     }
 
     // .subscribe__submit
 
     &__submit {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.375rem 0.9375rem 0.625rem;
+        border-block-end: 0.125rem solid;
+        cursor: pointer;
+        color: rgb(30, 40, 50);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        line-height: 1.1875;
+        text-transform: uppercase;
     }
 }
 @media (any-hover) {
