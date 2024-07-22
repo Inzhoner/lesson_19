@@ -968,3 +968,40 @@ input[type=search]::-webkit-search-decoration {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.main__promo {
+  background: rgba(30, 40, 50, 0.05);
+  padding-block: 6.25rem;
+}
+
+.promo__instagram {
+  -webkit-margin-after: clamp(1.5rem, 0.607rem + 4.47vw, 4.375rem);
+          margin-block-end: clamp(1.5rem, 0.607rem + 4.47vw, 4.375rem);
+}
+.instagram__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: clamp(0.75rem, 0.517rem + 1.17vw, 1.5rem);
+}
+.instagram__link {
+  position: relative;
+}
+.instagram__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../img/promo/instagram.svg) center/3rem 3rem no-repeat, rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+@media (any-hover) {
+  .instagram__link:hover::after {
+    opacity: 1;
+  }
+}

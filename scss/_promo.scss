@@ -1,0 +1,94 @@
+.main {
+    // .main__promo
+
+    &__promo {
+        background: rgba(30, 40, 50, 0.05);
+        padding-block: toRem(100);
+    }
+}
+.promo {
+    // .promo__container
+
+    &__container {
+    }
+
+    // .promo__instagram
+
+    &__instagram {
+        margin-block-end: clamp(toRem(24), toRem(9.712) + 4.47vw, toRem(70));
+    }
+
+    // .promo__subscribe
+
+    &__subscribe {
+    }
+}
+.instagram {
+    // .instagram__title
+
+    &__title {
+    }
+
+    // .instagram__products
+
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(0.75rem, 0.517rem + 1.17vw, 1.5rem);
+    }
+
+    // .instagram__item
+
+    &__item {
+    }
+
+    // .instagram__link
+
+    &__link {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url(../img/promo/instagram.svg) center / 3rem 3rem
+                    no-repeat,
+                rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    }
+
+    // .instagram__img
+
+    &__img {
+    }
+}
+.title {
+}
+.subscribe {
+    // .subscribe__title
+
+    &__title {
+    }
+
+    // .subscribe__form
+
+    &__form {
+    }
+
+    // .subscribe__address
+
+    &__address {
+    }
+
+    // .subscribe__submit
+
+    &__submit {
+    }
+}
+@media (any-hover) {
+    .instagram__link:hover::after {
+        opacity: 1;
+    }
+}
