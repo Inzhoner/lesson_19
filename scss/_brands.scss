@@ -1,19 +1,19 @@
 .main {
     // .main__brands
     &__brands {
-        margin-block-end: clamp(3rem, 1.9925rem + 4.2989vw, 5.625rem);
+        margin-block-end: clamp(toRem(48), toRem(32) + 4.2989vw, toRem(90));
     }
 }
 .brands {
     // .brands__container
-    &__container {
-    }
+    // &__container {
+    // }
 
     // .brands__list
     &__list {
         display: flex;
         flex-wrap: nowrap;
-        gap: 14px 10px;
+        gap: toRem(14) toRem(10);
         justify-content: space-around;
         align-items: center;
     }
@@ -29,8 +29,8 @@
     }
 
     // .brands__link
-    &__link {
-    }
+    // &__link {
+    // }
 
     // .brands__image
     &__image {

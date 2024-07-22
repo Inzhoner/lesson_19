@@ -7,8 +7,8 @@
         url('../img/hero/right-flower.png') 100% 70% no-repeat
             hsl(240deg 5% 96%);
     // .hero__container
-    &__container {
-    }
+    // &__container {
+    // }
 
     &__wrapper {
         display: flex;
@@ -40,7 +40,7 @@
         font-size: clamp(toRem(36), toRem(20) + 3.8895vw, toRem(74));
         font-weight: 300;
         line-height: 0.74324;
-        margin-bottom: clamp(0.75rem, -0.1016rem + 3.6336vw, 2.96875rem);
+        margin-bottom: clamp(toRem(12), toRem(-1.5) + 3.6336vw, toRem(48));
     }
 
     // .hero__text
@@ -50,7 +50,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: clamp(toRem(16), 0.6642rem + 1.433vw, toRem(28));
         line-height: 1.8333;
-        margin-bottom: clamp(0.75rem, -0.4375rem + 5.0665vw, 4.125rem);
+        margin-bottom: clamp(toRem(12), toRem(-7) + 5.0665vw, toRem(66));
         @media (max-width: toEm(810)) {
             max-width: toRem(500);
         }

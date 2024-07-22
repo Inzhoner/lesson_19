@@ -179,6 +179,17 @@ body {
   padding-inline: 0.9375rem;
 }
 
+.title {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  font-size: clamp(2rem, 1.5625rem + 1.8424vw, 3.125rem);
+  font-weight: 500;
+  text-transform: capitalize;
+  -webkit-margin-after: clamp(1rem, 0.625rem + 1.433vw, 1.875rem);
+          margin-block-end: clamp(1rem, 0.625rem + 1.433vw, 1.875rem);
+}
+
 @media (any-hover: hover) {
   a:hover {
     color: #e74848;
@@ -491,7 +502,7 @@ input[type=search]::-webkit-search-decoration {
   font-size: clamp(2.25rem, 1.25rem + 3.8895vw, 4.625rem);
   font-weight: 300;
   line-height: 0.74324;
-  margin-bottom: clamp(0.75rem, -0.1016rem + 3.6336vw, 2.96875rem);
+  margin-bottom: clamp(0.75rem, -0.09375rem + 3.6336vw, 3rem);
 }
 .hero__text {
   max-width: 43.75rem;
@@ -547,8 +558,8 @@ input[type=search]::-webkit-search-decoration {
 }
 
 .main__brands {
-  -webkit-margin-after: clamp(3rem, 1.9925rem + 4.2989vw, 5.625rem);
-          margin-block-end: clamp(3rem, 1.9925rem + 4.2989vw, 5.625rem);
+  -webkit-margin-after: clamp(3rem, 2rem + 4.2989vw, 5.625rem);
+          margin-block-end: clamp(3rem, 2rem + 4.2989vw, 5.625rem);
 }
 
 .brands__list {
@@ -557,7 +568,7 @@ input[type=search]::-webkit-search-decoration {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  gap: 14px 10px;
+  gap: 0.875rem 0.625rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -645,20 +656,11 @@ input[type=search]::-webkit-search-decoration {
   margin-bottom: 8.75rem;
 }
 
-.products__title {
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  text-align: center;
-  font-size: clamp(2rem, 1.5682rem + 1.8424vw, 3.125rem);
-  font-weight: 500;
-  text-transform: capitalize;
-  -webkit-margin-after: clamp(1rem, 0.6642rem + 1.433vw, 1.875rem);
-          margin-block-end: clamp(1rem, 0.6642rem + 1.433vw, 1.875rem);
-}
 .products__filter {
   -webkit-margin-after: clamp(1rem, 0.5442rem + 1.9447vw, 2.1875rem);
           margin-block-end: clamp(1rem, 0.5442rem + 1.9447vw, 2.1875rem);
 }
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
