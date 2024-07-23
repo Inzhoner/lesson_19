@@ -33,8 +33,10 @@ body {
 @media (any-hover: hover) {
     a:hover,
     .subscribe__address:hover,
-    .subscribe__submit:hover {
+    .subscribe__submit:hover
+    .social-footer__link:hover {
         color: #e74848;
+        fill: #e74848;
     }
 }
 // Прибираємо хрестик з input
@@ -60,4 +62,9 @@ input[type='search']::-webkit-search-decoration {
     &:hover {
         background: #ff6f61;
     }
+}
+
+.wrapper__main {
+    flex: auto;
+    margin-block-end: clamp(2.5rem, 0.227rem + 10.1vw, 8.75rem);
 }
