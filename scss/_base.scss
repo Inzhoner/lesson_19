@@ -33,8 +33,7 @@ body {
 @media (any-hover: hover) {
     a:hover,
     .subscribe__address:hover,
-    .subscribe__submit:hover
-    .social-footer__link:hover {
+    .subscribe__submit:hover .social-footer__link:hover {
         color: #e74848;
         fill: #e74848;
     }
@@ -68,3 +67,10 @@ input[type='search']::-webkit-search-decoration {
     flex: auto;
     margin-block-end: clamp(2.5rem, 0.227rem + 10.1vw, 8.75rem);
 }
+
+// .description__title {
+//     color: #000;
+//     font-weight: 600;
+//     text-transform: capitalize;
+//     margin-bottom: toRem(16);
+// }

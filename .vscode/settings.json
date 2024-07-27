@@ -1,4 +1,7 @@
 {
     "liveServer.settings.port": 5501,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorSmoothCaretAnimation": "explicit",
     "cSpell.words": ["lookbook", "скрол"]
 }
