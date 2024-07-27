@@ -1075,6 +1075,8 @@ input[type=search]::-webkit-search-decoration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.875rem 3.5rem;
 }
 .top-footer__main > :not(:last-child) {
@@ -1155,6 +1157,24 @@ input[type=search]::-webkit-search-decoration {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 36.25em) {
+  .bottom-footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 36.25em) {
+  .bottom-footer__services {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 .bottom-footer__link {
   display: -webkit-box;
